@@ -15,7 +15,7 @@
   --button-color-white: #ffffff;
   --btn-bgc-portfolio: #f5f4fa;
   --footer-hero-background-color: #2f303a;
-  --hero-bg-color: #C4C4C4;
+  --hero-bg-color: #c4c4c4;
   --footer-color-contact: rgba(255, 255, 255, 0.6);
   --border-color-portfolio: #eeeeee;
 }
@@ -177,8 +177,10 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url('../images/Img1.jpg');
+  min-width: 1600px;
   background-position: center;
-
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--hero-bg-color);
   text-align: center;
 }
@@ -237,6 +239,7 @@ img {
 }
 
 /* decor Description */
+
 .description {
   padding-top: 94px;
 }
