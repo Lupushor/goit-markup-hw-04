@@ -15,6 +15,7 @@
   --button-color-white: #ffffff;
   --btn-bgc-portfolio: #f5f4fa;
   --footer-hero-background-color: #2f303a;
+  --hero-bg-color: #C4C4C4;
   --footer-color-contact: rgba(255, 255, 255, 0.6);
   --border-color-portfolio: #eeeeee;
 }
@@ -171,10 +172,14 @@ img {
 }
 
 /* decor Hero */
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--footer-hero-background-color);
+  background-image: url('../images/Img1.jpg');
+  background-position: center;
+
+  background-color: var(--hero-bg-color);
   text-align: center;
 }
 
