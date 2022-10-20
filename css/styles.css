@@ -147,8 +147,9 @@ img {
   margin-left: 50px;
 }
 
-.contact-nav .link {
-  display: block;
+.contact-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -163,14 +164,10 @@ img {
 .contact-icon-mail {
   fill: currentColor;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
 }
 .contact-icon-phone {
   fill: currentColor;
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
 }
 .nav-list .link.current {
   color: var(--accent-color);
@@ -191,6 +188,7 @@ img {
 /* decor Hero */
 
 .hero {
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -200,7 +198,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/Img1.jpg');
-  min-width: 1600px;
+  max-width: 1600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,8 +221,8 @@ img {
 }
 
 .hero-button {
-  /* display: inline-block; */
   border-radius: 4px;
+  border-color: transparent;
   padding: 10px 32px;
   margin-top: 30px;
 
@@ -237,7 +235,7 @@ img {
   letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--button-color-white);
   cursor: pointer;
 }
@@ -277,6 +275,7 @@ img {
 }
 
 .description-icon-size {
+  margin-bottom: 30px;
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -326,7 +325,6 @@ img {
 } */
 
 .description-title {
-  padding-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -421,11 +419,9 @@ img {
   height: 44px;
 }
 .team-soc-link {
-  display: block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  /* background: #188ce8; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,10 +525,10 @@ img {
 }
 
 .invitation-title {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: calc((16px / 14px));
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -636,12 +632,11 @@ img {
 
 .portfolio-link {
   text-decoration: none;
+  display: block;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
